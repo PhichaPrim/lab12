@@ -3,12 +3,7 @@
 using namespace std;
 
 template <typename T>
-void mySwap(T &i,T &j){
-	T a=i;
-	T b=j;
-	i = b;
-    j = a;
-}
+void mySwap(T &i,T &j);
 
 int main(){
 	int x, y;
@@ -36,6 +31,16 @@ int main(){
 	cout << "p = " << p << ", q = " << q << "\n";
 
 	return 0;
+}
+
+template <typename T>
+void mySwap(T &i,T &j){
+	T a=i;
+	T b=j;
+	i = b;
+    j = a;
+}
+eturn 0;
 }
 
 
